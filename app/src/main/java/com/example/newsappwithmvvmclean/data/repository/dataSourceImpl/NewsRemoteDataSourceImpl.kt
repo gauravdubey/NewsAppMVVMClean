@@ -10,8 +10,7 @@ class NewsRemoteDataSourceImpl(private val newsAPIService: NewsAPIService) : New
     override suspend fun getNewsHeadlines(
         country: String,
         page: Int
-    )
-    : Response<APIResponse> {
+    ): Response<APIResponse> {
         return newsAPIService.getNewsHeadline(country, page)
     }
 

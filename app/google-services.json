@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55378890080",
+    "project_id": "newsappwithmvvmclean",
+    "storage_bucket": "newsappwithmvvmclean.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55378890080:android:8eb370a5d067b33144a205",
+        "android_client_info": {
+          "package_name": "com.example.newsappwithmvvmclean"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEZgaETlcfJGN9n3fG5YfZMHfLtfJpJOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

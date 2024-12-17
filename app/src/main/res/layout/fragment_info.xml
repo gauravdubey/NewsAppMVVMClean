@@ -12,9 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:contentDescription="@string/content_description"
         android:src="@drawable/baseline_save_as_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingClass" />
 
     <WebView
         android:id="@+id/wv_info"

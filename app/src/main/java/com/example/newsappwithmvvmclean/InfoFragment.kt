@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.navArgs
 import com.example.newsappwithmvvmclean.databinding.FragmentInfoBinding
 import com.example.newsappwithmvvmclean.presentation.viewmodel.NewsViewModel
 import com.google.android.material.snackbar.Snackbar
@@ -26,10 +25,16 @@ class InfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fragmentInfoBinding = FragmentInfoBinding.bind(view)
 
-        /*val args : InfoFragmentArgs by navArgs()
+        /*val args: InfoFragmentArgs by navArgs()
         val article = args.selectedArticle
 
-        viewModel=(activity as MainActivity).viewModel
+        viewModel = (activity as MainActivity).viewModel
+
+
+//        val args : InfoFragment by navArgs()
+//        val article = args.selectedArticle
+//
+//        viewModel=(activity as MainActivity).viewModel
 
         fragmentInfoBinding.wvInfo.apply {
             webViewClient = WebViewClient()

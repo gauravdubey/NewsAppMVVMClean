@@ -21,4 +21,5 @@ class NewsRemoteDataSourceImpl(private val newsAPIService: NewsAPIService) : New
     ): Response<APIResponse> {
         return newsAPIService.getSearchedNews(country, searchQuery, page)
     }
+
 }

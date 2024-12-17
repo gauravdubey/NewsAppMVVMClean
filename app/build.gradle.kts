@@ -8,16 +8,16 @@ plugins {
 
 android {
     namespace = "com.example.newsappwithmvvmclean"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.newsappwithmvvmclean"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-//        buildConfigField("String","API_KEY","77af850922f8452497c842704f0f50bb")
-//        buildConfigField("String","BASE_URL","https://newsapi.org/")
+        buildConfigField("String","API_KEY","77af850922f8452497c842704f0f50bb")
+        buildConfigField("String","BASE_URL","https://newsapi.org/")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -52,6 +52,8 @@ android {
 dependencies {
 
 
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     val room_version = "2.6.1"
 //    Room
     implementation(libs.androidx.room.runtime)
@@ -86,6 +88,7 @@ dependencies {
     // Views/Fragments integration
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+
 
 //    Firebase
     implementation(libs.firebase.analytics)
